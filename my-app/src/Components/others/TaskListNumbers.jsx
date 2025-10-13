@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const TaskListNumbers = () => {
   return (
@@ -20,7 +20,7 @@ const TaskListNumbers = () => {
         <h3 className='text-xl font-medium'>The task</h3>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default TaskListNumbers
+export default TaskListNumbers;
