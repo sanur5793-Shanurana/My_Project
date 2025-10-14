@@ -1,8 +1,10 @@
 const employees = [
   {
     "id": 1,
-    "email": "employee1@example.com",
+    "firstName": "Aarav",
+    "email": "e@e.com",
     "password": "123",
+    "taskCount": { "active": 1, "newTask": 1, "completed": 2, "failed": 0 },
     "tasks": [
       {
         "taskTitle": "Update client database",
@@ -38,8 +40,10 @@ const employees = [
   },
   {
     "id": 2,
+    "firstName": "Priya",
     "email": "employee2@example.com",
     "password": "123",
+    "taskCount": { "active": 1, "newTask": 1, "completed": 1, "failed": 1 },
     "tasks": [
       {
         "taskTitle": "Design landing page",
@@ -85,8 +89,10 @@ const employees = [
   },
   {
     "id": 3,
+    "firstName": "Rohan",
     "email": "employee3@example.com",
     "password": "123",
+    "taskCount": { "active": 1, "newTask": 1, "completed": 1, "failed": 0 },
     "tasks": [
       {
         "taskTitle": "API integration",
@@ -122,8 +128,10 @@ const employees = [
   },
   {
     "id": 4,
+    "firstName": "Sneha",
     "email": "employee4@example.com",
     "password": "123",
+    "taskCount": { "active": 1, "newTask": 1, "completed": 1, "failed": 0 },
     "tasks": [
       {
         "taskTitle": "Social media update",
@@ -159,8 +167,10 @@ const employees = [
   },
   {
     "id": 5,
+    "firstName": "Vikram",
     "email": "employee5@example.com",
     "password": "123",
+    "taskCount": { "active": 1, "newTask": 1, "completed": 1, "failed": 0 },
     "tasks": [
       {
         "taskTitle": "Customer feedback review",
@@ -195,6 +205,7 @@ const employees = [
     ]
   }
 ];
+
 const admin = [{
   "id": 1,
   "email": "admin@example.com",
