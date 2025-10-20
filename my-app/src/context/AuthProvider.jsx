@@ -5,12 +5,12 @@ import { useState } from 'react';
 const AuthProvider = ({ children }) => {
   const [userData, setUserData] = useState(null);
   useEffect(() => {
-    setlocalstorage()
-    const {employees,admin}= getLocalStorage();
-    setUserData({employees,admin});
+    setlocalstorage();
+    const { employees } = getLocalStorage();
+    setUserData(employees);
   }, []);
   return (
-    <AuthContext.Provider value={userData}>
+    <AuthContext.Provider value={[userData, setUserData]}>
       {children}
     </AuthContext.Provider>
   );

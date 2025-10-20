@@ -167,6 +167,45 @@ const employees = [
   },
   {
     "id": 5,
+    "firstName": "Shanu-Rana",
+    "email": "sanur5793@gmail.com",
+    "password": "ronaldo67",
+    "taskCount": { "active": 1, "newTask": 1, "completed": 1, "failed": 0 },
+    "tasks": [
+      {
+        "taskTitle": "Develop new feature",
+        "taskDescription": "develop new features in this application.",
+        "taskDate": "2025-11-05",
+        "category": "Developing",
+        "active": false,
+        "newTask": true,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Email campaign",
+        "taskDescription": "Send promotional emails to target audience.",
+        "taskDate": "2025-10-06",
+        "category": "Marketing",
+        "active": true,
+        "newTask": false,
+        "completed": false,
+        "failed": false
+      },
+      {
+        "taskTitle": "Analyze campaign performance",
+        "taskDescription": "Prepare report of campaign engagement metrics.",
+        "taskDate": "2025-10-08",
+        "category": "Analytics",
+        "active": false,
+        "newTask": false,
+        "completed": true,
+        "failed": false
+      }
+    ]
+  },
+  {
+    "id": 6,
     "firstName": "Vikram",
     "email": "employee5@example.com",
     "password": "123",

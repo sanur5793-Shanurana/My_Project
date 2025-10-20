@@ -7,14 +7,14 @@ import Header from './Components/others/Header';
 // import { setlocalstorage } from './utils/LocalStorage';
 // import { getLocalStorage } from './utils/LocalStorage';
 import { AuthContext } from './context/AuthProvider';
-import { getLocalStorage } from './utils/LocalStorage';
+// import { getLocalStorage } from './utils/LocalStorage';
 
 
 function App() {
 
   const [user, setUser] = useState(null)
   const [loggedInUserData, setLoggedInUserData] = useState(null)
-  const authData = useContext(AuthContext)
+  const [userData,setUSerData] = useContext(AuthContext)
   useEffect(() => {
     const loggedInUser = localStorage.getItem('loggedInUser')
     if(loggedInUser) {
@@ -31,8 +31,8 @@ function App() {
       localStorage.setItem('loggedInUser', JSON.stringify({ role: 'admin' }));
 
     }
-    else if (authData) { 
-      const employee = authData.employees.find((e) => e.email === email && e.password === password);
+    else if (userData) {
+      const employee = userData.find((e) => e.email === email && e.password === password);
       if (employee) {
         setUser('employee');
         setLoggedInUserData(employee);
